@@ -17,22 +17,25 @@
                 <label for="firstname">Your First Name</label>
                 <input type="text" id="firstname" name="firstname">
                 <label for="lastname">Your Last Name</label>
-                    <input type="text" id="lastname" name="lastname">
+                <input type="text" id="lastname" name="lastname">
             </div>
             <fieldset>
                 <legend>Your Contact Info.</legend>
-
-                <label for="email">Your Email</label>
-                <input type="text" id="email" name="email">
-
-                <label for="address">Your Street Address</label>
-                <input type="text" id="address" name="address">
-
+                <div>
+                    <label for="email">Your Email</label>
+                    <input type="text" id="email" name="email">
+                </div>
+                <div>
+                    <label for="address">Your Street Address</label>
+                    <input type="text" id="address" name="address">
+                </div>
+                <div>
                 <label for="City">City</label>
                 <input type="text" id="City" name="City">
 
                 <label for="State">State</label>
-                <select name="state"> 
+                <input name="State" list="state-list">
+                <datalist id="state-list"> 
                     <option value="AL">Alabama</option>
                     <option value="AK">Alaska</option>
                     <option value="AZ">Arizona</option>
@@ -82,11 +85,11 @@
                     <option value="WI">Wisconsin</option>
                     <option value="WV">West Virginia</option>
                     <option value="WY">Wyoming</option>
-                </select>
-
+                </datalist>
+                
                 <label for="Zip">Zip Code</label>
                 <input type="text" id="Zip" name="Zip">
-
+                </div>
             </fieldset>
 
             <fieldset>
@@ -109,14 +112,13 @@
             <label for="color">Your Favorite color</label>
             <input type="color" name="color">
 
-            <!-- TODO: Checkboxes for selecting extra add-ons -->
             <fieldset>
                 <legend>Add-ons & Extra</legend>
                 <h3>Pick Your Extra Ammenities</h3>
                 <div>
                     <input type="checkbox"
                         value="In Room Hot-Tub"
-                        name="extra">
+                        name="extra" checked>
                     <label for="In Room Hot-Tub">In Room Hot-Tub</label>
                 </div>
                 <div>
@@ -127,13 +129,19 @@
                 </div>
                 <div>
                     <input type="checkbox"
-                    value="Sauna Access"
-                    name="extra">
-                <label for="Sauna Access">Sauna Access</label>
+                        value="Sauna Access"
+                        name="extra">
+                    <label for="Sauna Access">Sauna Access</label>
+                </div>
+                <div>
+                    <input type="checkbox"
+                        value="Ocean View"
+                        name="extra">
+                    <label for="Ocean View">Ocean view</label>
                 </div>
             </fieldset>
             
-            <input type="submit" value="Enter the Contest">
+            <input type="submit" value="Enter the Contest!">
 
         </form>
     </main>
